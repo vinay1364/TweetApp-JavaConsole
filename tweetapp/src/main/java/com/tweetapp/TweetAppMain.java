@@ -81,9 +81,7 @@ public class TweetAppMain {
 					break;
 
 				case 4:
-					boolean anyUserFound=util.viewAllUsers();
-					if(!anyUserFound)
-						System.out.println("Couldn't find any user. Please try again.");
+					util.viewAllUsers();
 					break;
 
 				case 5:

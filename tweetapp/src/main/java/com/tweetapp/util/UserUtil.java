@@ -98,13 +98,9 @@ public class UserUtil {
 	}
 
 	// All users
-	public boolean viewAllUsers() {
+	public void viewAllUsers() {
 		List<User> users = userService.getAllUsers();
-		if(!users.isEmpty()) {
 			users.forEach((user)->System.out.println(user.getFirst_name()+" "+user.getLast_name()));
-			return true;
-		}
-		return false;
 	}
 
 	public Map<String, Integer> loginUser() {
@@ -231,5 +227,6 @@ public class UserUtil {
 		return false;
 		
 	}
+	
 
 }
